@@ -9,6 +9,7 @@ $color-hero: rgb(0, 107, 119);
 $color-what-background: $color-hero;
 $color-what: $color-hero-background;
 
+body { scroll-behavior: smooth; }
 strong { font-weight: bold; }
 
 .hero {
@@ -21,11 +22,23 @@ strong { font-weight: bold; }
   font-family: $font-title;
   font-size: 68px;
   text-align: center;
-  padding-top: 60vh;
-  padding-bottom: 10%;
+  padding-top: 40vh;
+  padding-bottom: 20px;
 }
 
-.what {
+.hero-downarrow {
+  a {
+    color: $color-hero;
+    text-decoration: none;
+  }
+  font-family: $font-title;
+  font-size: 68px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#what {
   background-color: $color-what-background;
   color: $color-what;
   font-family: $font-body;
@@ -38,9 +51,9 @@ strong { font-weight: bold; }
   width: 60%;
   max-width: 500px;
   margin: 0 auto;
-  border-bottom: 5px solid darken($color-what-background, 1.5%);
+  border-bottom: 3px solid darken($color-what-background, 1.5%);
 
-  &:last {
+  &:last-child {
     border: none;
   }
 }
@@ -48,4 +61,14 @@ strong { font-weight: bold; }
 .what-point-line {
   text-align: center;
   padding: 12px 0;
+}
+
+.footer-section {
+  font-family: verdana;
+  font-size: 12px;
+  background: darken($color-what-background, 1.5%);
+  color: darken($color-what-background, 10%);
+  font-weight: normal;
+  text-align: center;
+  padding: 40px 0;
 }

@@ -1,2 +1,16 @@
 <footer>
+  <div class='footer-section'>
+    <p>&copy; 2016 Scope & Craft</p>
+  </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script language="javascript">
+$(document).on('click', 'a', function(event){
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 500);
+});
+</script>

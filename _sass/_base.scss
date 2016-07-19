@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=Cambria');
+@import url('https://fonts.googleapis.com/css?family=Poly');
 
 $font-title: 'Lobster', serif;
-$font-body: 'Cambra', serif;
+$font-body: 'Poly', 'Georgia', serif;
 
 $color-hero-background: #eeff41;
 $color-hero: rgb(0, 107, 119);
@@ -42,14 +42,15 @@ strong { font-weight: bold; }
   background-color: $color-what-background;
   color: $color-what;
   font-family: $font-body;
-  font-size: 28px;
+  font-size: 30px;
   min-height: 100vh;
+  line-height: 1.2;
 }
+
 
 .what-point {
   padding: 5% 0;
-  width: 60%;
-  max-width: 500px;
+  width: 400px;
   margin: 0 auto;
   border-bottom: 3px solid darken($color-what-background, 1.5%);
 
@@ -67,8 +68,17 @@ strong { font-weight: bold; }
   font-family: verdana;
   font-size: 12px;
   background: darken($color-what-background, 1.5%);
-  color: darken($color-what-background, 10%);
+  color: darken($color-what-background, 20%);
   font-weight: normal;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 0 10px 0;
+}
+
+@media (max-width: 400px) {
+  #what {
+    font-size: 26px;
+  }
+  .what-point {
+    width: 330px;
+  }
 }

@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Cambria');
 
 $font-title: 'Lobster', serif;
+$font-body: 'Cambra', serif;
 
 $color-hero-background: #eeff41;
 $color-hero: rgb(0, 107, 119);
+$color-what-background: $color-hero;
+$color-what: $color-hero-background;
 
+strong { font-weight: bold; }
 
 .hero {
   background-color: $color-hero-background;
@@ -18,4 +23,29 @@ $color-hero: rgb(0, 107, 119);
   text-align: center;
   padding-top: 60vh;
   padding-bottom: 10%;
+}
+
+.what {
+  background-color: $color-what-background;
+  color: $color-what;
+  font-family: $font-body;
+  font-size: 28px;
+  min-height: 100vh;
+}
+
+.what-point {
+  padding: 5% 0;
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-bottom: 5px solid darken($color-what-background, 1.5%);
+
+  &:last {
+    border: none;
+  }
+}
+
+.what-point-line {
+  text-align: center;
+  padding: 12px 0;
 }

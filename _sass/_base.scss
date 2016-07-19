@@ -1,1 +1,21 @@
-html { padding: 0; }
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+$font-title: 'Lobster', serif;
+
+$color-hero-background: #eeff41;
+$color-hero: rgb(0, 107, 119);
+
+
+.hero {
+  background-color: $color-hero-background;
+  min-height: 100vh;
+}
+
+.hero-title {
+  color: $color-hero;
+  font-family: $font-title;
+  font-size: 68px;
+  text-align: center;
+  padding-top: 60vh;
+  padding-bottom: 10%;
+}

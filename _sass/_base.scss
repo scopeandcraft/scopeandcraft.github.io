@@ -93,6 +93,7 @@ a {
   font-family: 'verdana', sans-serif;
   color: lighten($color-what-background, 15%);
   text-align: left;
+  width: 300px;
 }
 .cta-input {
   font-family: 'Fjalla One', sans-serif;
@@ -114,8 +115,11 @@ input, textarea {
   padding: 12px;
   display: block;
   font-size: 22px;
-  width: 350px;
+  width: 300px;
   margin: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 input[type=submit] {
@@ -123,8 +127,11 @@ input[type=submit] {
   font-weight: bold;
   border: none;
   color: darken($color-what-background, 10%);
-  width: 350px;
+  width: 300px;
   margin: 0 auto;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
   &:hover {
     background-color: lighten($color-what-background, 20%);
     cursor: pointer;

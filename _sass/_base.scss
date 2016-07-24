@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Poly');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 $font-title: 'Lobster', serif;
 $font-body: 'Poly', 'Georgia', serif;
@@ -52,15 +53,15 @@ a {
 }
 
 
-.what-point {
+.what-point, .cta-section {
   padding: 5% 0;
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   border-bottom: 3px solid darken($color-what-background, 1.5%);
+}
 
-  &:last-child {
-    border: none;
-  }
+.what-point:last-child{
+  border: none;
 }
 
 .what-point-line {
@@ -68,14 +69,66 @@ a {
   padding: 12px 0;
 }
 
+.what-point-line--last {
+  text-align: center;
+  padding: 12px;
+}
+
 .footer-section {
-  font-family: verdana;
-  font-size: 12px;
-  background: darken($color-what-background, 1.5%);
-  color: darken($color-what-background, 20%);
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: darken($color-what-background, 3%);
+  color: lighten($color-what-background, 15%);
   font-weight: normal;
   text-align: center;
-  padding: 40px 0 10px 0;
+  padding: 20px 0 40px 0;
+}
+
+.cta {
+  width: 100%;
+  background: darken($color-what-background, 1.5%);
+}
+.cta-section {
+  font-family: 'verdana', sans-serif;
+  color: lighten($color-what-background, 15%);
+  text-align: left;
+}
+.cta-input {
+  font-family: 'Fjalla One', sans-serif;
+  padding: 12px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+label, input[type=submit] {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+input, textarea {
+  padding: 12px;
+  display: block;
+  font-size: 22px;
+  width: 350px;
+  margin: 0;
+}
+
+input[type=submit] {
+  background-color: lighten($color-what-background, 15%);
+  font-weight: bold;
+  border: none;
+  color: darken($color-what-background, 10%);
+  width: 350px;
+  margin: 0 auto;
+  &:hover {
+    background-color: lighten($color-what-background, 20%);
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 400px) {

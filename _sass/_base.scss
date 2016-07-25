@@ -101,6 +101,7 @@ a {
   width: 100%;
   background: darken($color-what-background, 1.5%);
 }
+
 .cta-section {
   font-family: 'verdana', sans-serif;
   color: lighten($color-what-background, 15%);
@@ -127,7 +128,7 @@ input, textarea {
   padding: 12px;
   display: block;
   font-size: 22px;
-  width: 300px;
+  width: 290px;
   margin: 0;
   border-radius: 0;
   -webkit-appearance: none;

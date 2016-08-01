@@ -21,10 +21,18 @@ strong { font-weight: bold; }
 .hero-title {
   color: $color-hero;
   font-family: $font-title;
+  text-indent: -9999em;
+  white-space: nowrap;
   font-size: 68px;
   text-align: center;
-  padding-top: 40vh;
+}
+
+.hero-logo {
+  padding-top: 30vh;
+  display: block;
+  margin: 0 auto;
   padding-bottom: 20px;
+  width: 375px;
 }
 
 .hero-subtitle {
@@ -69,7 +77,23 @@ a {
   padding: 5% 0;
   width: 350px;
   margin: 0 auto;
-  border-bottom: 3px solid darken($color-what-background, 1.5%);
+  position: relative;
+
+  &:after {
+    margin: 0 auto;
+    content:'';
+    height: 10px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    background: darken($color-what-background, 1.5%);;
+    position: absolute;
+    bottom:-10px;
+  }
+}
+
+.what-point:first-child{
+  p:first-child { font-size: 150%; } // margin-top: 40px; margin-bottom: 40px;}
 }
 
 .what-point:last-child{
@@ -107,6 +131,9 @@ a {
   color: lighten($color-what-background, 15%);
   text-align: left;
   width: 300px;
+  &:after {
+    background: transparent;
+  }
 }
 .cta-input {
   font-family: 'Fjalla One', sans-serif;

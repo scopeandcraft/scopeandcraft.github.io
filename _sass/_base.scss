@@ -90,11 +90,10 @@ a {
     position: absolute;
     bottom:-10px;
   }
-}
 
-
-.what-point:last-child{
-  border: none;
+  &:last-child {
+    border: none;
+  }
 }
 
 .what-point-line {
@@ -128,10 +127,12 @@ a {
   color: lighten($color-what-background, 15%);
   text-align: left;
   width: 300px;
+
   &:after {
     background: transparent;
   }
 }
+
 .cta-input {
   font-family: 'Fjalla One', sans-serif;
   padding: 12px 0;

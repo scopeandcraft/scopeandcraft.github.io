@@ -5,10 +5,11 @@
 $font-title: 'Lobster', serif;
 $font-body: 'Poly', 'Georgia', serif;
 
-$color-hero-background: #eeff41;
-$color-hero: rgb(0, 107, 119);
-$color-what-background: $color-hero;
-$color-what: $color-hero-background;
+// https://coolors.co/437c90-255957-eeebd3-a98743-f7c548
+$color-hero-background: #A98743;
+$color-hero: #EEEBD3;
+$color-what-background: #437C90;
+$color-what: $color-hero;
 
 body { scroll-behavior: smooth; }
 strong { font-weight: bold; }

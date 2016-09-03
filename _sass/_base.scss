@@ -14,8 +14,12 @@ body { scroll-behavior: smooth; }
 strong { font-weight: bold; }
 
 .hero {
+  display: block;
   background-color: $color-hero-background;
   min-height: 100vh;
+  display: flex;
+    flex-direction: column;
+      justify-content: center;
 }
 
 .hero-title {
@@ -28,11 +32,10 @@ strong { font-weight: bold; }
 }
 
 .hero-logo {
-  padding-top: 25vh;
   display: block;
   margin: 0 auto;
-  padding-bottom: 20px;
   width: 350px;
+  padding-bottom: 20px;
 }
 
 .hero-subtitle {

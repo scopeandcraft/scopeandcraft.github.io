@@ -5,10 +5,9 @@
 $font-title: 'Lobster', serif;
 $font-body: 'Poly', 'Georgia', serif;
 
-// https://coolors.co/437c90-255957-eeebd3-a98743-f7c548
-$color-hero-background: #A98743;
-$color-hero: #EEEBD3;
-$color-what-background: #437C90;
+$color-hero-background: #092327;
+$color-hero: lighten(#4E8098, 15%);
+$color-what-background: lighten(#092327, 4%);
 $color-what: $color-hero;
 
 body { scroll-behavior: smooth; }
@@ -111,8 +110,8 @@ a {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  background: darken($color-what-background, 3%);
-  color: lighten($color-what-background, 15%);
+  background: $color-hero-background; // darken($color-what-background, 3%);
+  color: $color-what; // lighten($color-what-background, 15%);
   font-weight: normal;
   text-align: center;
   padding: 20px 0 40px 0;
@@ -125,7 +124,7 @@ a {
 
 .cta-section {
   font-family: 'verdana', sans-serif;
-  color: lighten($color-what-background, 15%);
+  color: $color-what; // lighten($color-what-background, 15%);
   text-align: left;
   width: 300px;
 
